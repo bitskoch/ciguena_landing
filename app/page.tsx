@@ -17,7 +17,7 @@ export default function Home() {
         priority
       />
       <p className="font-after max-w-xl text-lg text-zinc-500 mb-8 leading-relaxed">
-        Garantizamos la precisión, seguridad y el rendimiento óptimo de tus equipos médicos y de laboratorio con estándares de alta calidad.
+        Ofrecemos servicios profesionales de agencia de comunicaciones y marketing digital en el Perú, ayudando a las empresas a mejorar su presencia en línea y alcanzar sus objetivos comerciales.
       </p>
 
       <div className="flex gap-4">
