@@ -3,8 +3,9 @@ import type { NextConfig } from "next";
 const nextConfig: NextConfig = {
   output: 'export', 
   images: {
-    unoptimized: true, // Requerido para exportación estática en plan gratuito de Vercel
+    unoptimized: true, 
   },
+  allowedDevOrigins: ['10.38.221.211'],
 };
 
 export default nextConfig;
