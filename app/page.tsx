@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex-1 flex flex-col items-center justify-center max-w-4xl mx-auto px-6 py-20 text-center">
       <h1 className="font-after text-4xl sm:text-5xl tracking-tight mb-6 bg-gradient-to-r from-blue-600 to-amber-400 bg-clip-text text-transparent">
-        Calibración y Mantenimiento de Equipos
+        Agencia de Comunicaciones y Marketing Digital en el Perú
       </h1>
       <Image
         src="/images/dog.jpg"
