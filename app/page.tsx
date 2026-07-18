@@ -5,20 +5,22 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex-1 flex flex-col items-center justify-center max-w-4xl mx-auto px-6 py-20 text-center">
-      <h1 className="font-after text-4xl sm:text-5xl tracking-tight mb-6 bg-gradient-to-r from-blue-600 to-amber-400 bg-clip-text text-transparent">
+      <h1 className="font-after text-4xl sm:text-5xl tracking-tight mb-6 bg-gradient-to-r from-blue-900 to-amber-500 bg-clip-text text-transparent">
         Agencia de Comunicaciones y Marketing Digital en el Perú
       </h1>
       <Image
-        src="/images/dog.jpg"
-        alt="Equipos médicos y de laboratorio calibrados"
+        src="/images/dog.png"
+        alt="male"
         width={612}
         height={459}
         className="rounded-xl mb-8"
         priority
       />
-      <p className="font-after max-w-xl text-lg text-zinc-500 mb-8 leading-relaxed">
-        Ofrecemos servicios profesionales de agencia de comunicaciones y marketing digital en el Perú, ayudando a las empresas a mejorar su presencia en línea y alcanzar sus objetivos comerciales.
-      </p>
+      <div className="max-w-xl bg-slate-800 border border-zinc-200 p-6 mb-8">
+        <p className="text-lg text-white leading-relaxed text-left">
+          Ofrecemos servicios profesionales de agencia de comunicaciones y marketing digital en el Perú, ayudando a las empresas a mejorar su presencia en línea y alcanzar sus objetivos comerciales.
+        </p>
+      </div>
 
       <div className="flex gap-4">
         <Link

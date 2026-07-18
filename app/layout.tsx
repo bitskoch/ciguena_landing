@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 const afterFont = localFont({
   src: "./fonts/after-regular.otf",
   variable: "--font-after",
-  weight: "600", // ajusta según el peso real de tu archivo
+  weight: "400", // ajusta según el peso real de tu archivo
 });
 
 export const metadata: Metadata = {
