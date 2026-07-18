@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex gap-4">
         <Link
           href="/contactanos"
-          className="bg-rose-500 hover:bg-rose-600 text-white font-semibold h-12 px-6 rounded-lg flex items-center justify-center transition-colors shadow-sm"
+          className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold h-12 px-6 rounded-lg flex items-center justify-center transition-colors shadow-sm"
         >
           Contactar ahora
         </Link>
