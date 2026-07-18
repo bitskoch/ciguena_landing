@@ -3,22 +3,22 @@ import Image from "next/image";
 
 export default function Navbar() {
     return (
-        <header className="border-b border-zinc-200 bg-white">
+        <header className="bg-blue-900">
             <div className="max-w-4xl mx-auto px-6 h-16 flex items-center justify-between">
                 <Link
                     href="/"
-                    className="flex items-center gap-3 font-bold text-lg text-zinc-900 hover:opacity-90 transition-opacity"
+                    className="flex items-center gap-3 font-bold text-lg text-white hover:opacity-90 transition-opacity"
                 >
                     <Image
                         src="/next.svg"
                         alt="Next.js"
                         width={180}
                         height={38}
-                        className="h-8 w-auto"
+                        className="h-8 w-auto invert dark:invert-0"
                     />
                 </Link>
 
-                <nav className="flex gap-6 text-sm font-medium">
+                <nav className="flex gap-6 text-sm font-medium text-white">
                     <Link href="/" className="hover:text-blue-600 transition-colors">
                         Inicio
                     </Link>

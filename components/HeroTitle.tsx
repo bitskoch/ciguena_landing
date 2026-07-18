@@ -1,3 +1,4 @@
+// src/components/HeroTitle.tsx
 "use client";
 
 import { useEffect, useRef, ReactNode } from "react";
@@ -8,26 +9,23 @@ type HeroTitleProps = {
   className?: string;
 };
 
-export default function HeroTitle({
-  children,
-  className,
-}: HeroTitleProps) {
+export default function HeroTitle({ children, className }: HeroTitleProps) {
   const titleRef = useRef<HTMLHeadingElement>(null);
 
   useEffect(() => {
-    gsap.fromTo(
-      titleRef.current,
-      {
-        opacity: 0,
-        y: 60,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 3,
-        ease: "power3.out",
-      }
-    );
+    if (!titleRef.current) return;
+
+    gsap.set(titleRef.current, {
+      opacity: 0,
+      y: 30,
+    });
+
+    gsap.to(titleRef.current, {
+      opacity: 1,
+      y: 0,
+      duration: 1,
+      ease: "power3.out",
+    });
   }, []);
 
   return (

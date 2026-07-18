@@ -29,8 +29,8 @@ const links = [
 
 export default function FooterSection() {
     return (
-        <footer className="py-16 md:py-32">
-            <div className="mx-auto max-w-5xl px-6">
+        <footer className="bg-yellow-500 py-16 md:py-12">
+            <div className=" mx-auto max-w-5xl px-6">
                 <Link
                     href="/"
                     aria-label="go home"
@@ -42,7 +42,7 @@ export default function FooterSection() {
                         <Link
                             key={index}
                             href={link.href}
-                            className="text-yellow-500 text-muted-foreground  hover:text-primary block duration-150">
+                            className="text-white text-muted-foreground  hover:text-primary block duration-150">
                             <span>{link.title}</span>
                         </Link>
                     ))}
@@ -54,7 +54,7 @@ export default function FooterSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Social Link 1" // Generic label
-                        className="text-yellow-500 text-muted-foreground hover:text-primary block">
+                        className="text-white text-muted-foreground hover:text-primary block">
                         <FaFacebook className="size-6" /> {/* Generic "Share" icon */}
                     </Link>
                     <Link
@@ -62,7 +62,7 @@ export default function FooterSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Social Link 2"
-                        className="text-yellow-500 text-muted-foreground hover:text-primary block">
+                        className="text-white text-muted-foreground hover:text-primary block">
                         <FaInstagram className="size-6" /> {/* Generic "Message" icon */}
                     </Link>
                     <Link
@@ -70,7 +70,7 @@ export default function FooterSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Social Link 3"
-                        className="text-yellow-500 text-muted-foreground hover:text-primary block">
+                        className="text-white text-muted-foreground hover:text-primary block">
                         <FaWhatsapp className="size-6" /> {/* Generic "Link" icon */}
                     </Link>
                     <Link
@@ -78,11 +78,11 @@ export default function FooterSection() {
                         target="_blank"
                         rel="noopener noreferrer"
                         aria-label="Social Link 6"
-                        className="text-yellow-500 text-muted-foreground hover:text-primary block">
+                        className="text-white text-muted-foreground hover:text-primary block">
                         <Baby className="size-6" /> {/* Generic "Feather" (post/write) icon */}
                     </Link>
                 </div>
-                <span className="text-yellow-500 text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Jose Huaynasi </span>
+                <span className="text-white text-muted-foreground block text-center text-sm"> © {new Date().getFullYear()} Jose Huaynasi </span>
             </div>
         </footer>
     )
