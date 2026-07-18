@@ -16,7 +16,6 @@ export default function Navbar() {
                         height={38}
                         className="h-8 w-auto"
                     />
-                    <span>Cigüeña</span>
                 </Link>
 
                 <nav className="flex gap-6 text-sm font-medium">
