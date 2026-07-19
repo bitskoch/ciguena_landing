@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import HeroTitle from "@/components/HeroTitle";
+import { ArrowRight } from "lucide-react";
 
 export default function Home() {
   return (
@@ -10,11 +11,11 @@ export default function Home() {
 
           {/* Columna izquierda */}
           <div className="px-8 lg:px-20 py-16">
-            <HeroTitle className="font-after text-3xl lg:text-6xl leading-tight text-white">
+            <HeroTitle className="font-kalnia text-5xl lg:text-6xl leading-tight text-white">
               Conferencias de IMPACTO
             </HeroTitle>
 
-            <p className="mt-6 text-lg text-white max-w-xl">
+            <p className="mt-6 font-inter font-light text-lg text-white max-w-xl">
               Ofrecemos servicios profesionales de comunicación estratégica,
               marketing digital y desarrollo de marca para impulsar el crecimiento
               de tu empresa.
@@ -23,9 +24,14 @@ export default function Home() {
             <div className="mt-10">
               <Link
                 href="/contactanos"
-                className="inline-flex border border-white hover:bg-blue-900 text-white px-8 py-4 rounded-full transition-colors"
+                className="group inline-flex items-center gap-2 text-white font-inter font-medium hover:text-blue-900 transition-colors"
               >
                 Contáctanos
+                <span className="ml-2 inline-block">
+                  <ArrowRight size={18}
+                    className="transition-transform duration-300 group-hover:translate-x-1"
+                  />
+                </span>
               </Link>
             </div>
           </div>
@@ -155,8 +161,42 @@ export default function Home() {
           Contactar ahora
         </Link>
       </div>
-      <br />
+      <div className="flex justify-center mt-8">
+        <div className="max-w-sm overflow-hidden rounded shadow-lg">
+          <Image
+            src="/images/carlos.jpg"
+            alt="Sunset in the mountains"
+            width={400}
+            height={250}
+            className="w-full"
+          />
 
+          <div className="font-inter px-6 py-4">
+            <div className="font-medium mb-2 text-xl font-bold">
+              Conferencias al estilo TEDx
+            </div>
+
+            <p className="text-base text-gray-700">
+              Coberturado con multiples medios de comunicación locales.
+            </p>
+          </div>
+
+          <div className="font-inter px-6 pt-4 pb-2">
+            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+              #Trasmisiones en vivo
+            </span>
+
+            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+              #Conferencias
+            </span>
+
+            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+              #Marketing Digital
+            </span>
+          </div>
+        </div>
+      </div>
+      <br />
     </>
   );
 }
