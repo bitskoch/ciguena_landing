@@ -18,7 +18,7 @@ export default function Navbar() {
                     />
                 </Link>
 
-                <nav className="flex gap-6 text-sm font-medium text-white">
+                <nav className="font-inter font-medium flex gap-6 text-sm  text-white">
                     <Link href="/" className="hover:text-blue-600 transition-colors">
                         Inicio
                     </Link>

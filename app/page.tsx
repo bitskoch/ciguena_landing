@@ -10,7 +10,7 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
 
           {/* Columna izquierda */}
-          <div className="px-8 lg:px-20 py-16">
+          <div className="px-6 lg:px-20 py-16">
             <HeroTitle className="font-kalnia text-5xl lg:text-6xl leading-tight text-white">
               Conferencias de IMPACTO
             </HeroTitle>
@@ -161,8 +161,8 @@ export default function Home() {
           Contactar ahora
         </Link>
       </div>
-      <div className="flex justify-center mt-8">
-        <div className="max-w-sm overflow-hidden rounded shadow-lg">
+      <div className="flex justify-center mt-8 mx-8">
+        <div className="max-w-sm bg bg-slate-50 overflow-hidden rounded shadow-xs">
           <Image
             src="/images/carlos.jpg"
             alt="Sunset in the mountains"
@@ -172,8 +172,8 @@ export default function Home() {
           />
 
           <div className="font-inter px-6 py-4">
-            <div className="font-medium mb-2 text-xl font-bold">
-              Conferencias al estilo TEDx
+            <div className="font-medium mb-2 text-xl text-slate-600 font-bold">
+              IMPULSANDO TU MARCA PERSONAL
             </div>
 
             <p className="text-base text-gray-700">
