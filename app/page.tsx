@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import HeroTitle from "@/components/HeroTitle";
 import { ArrowRight } from "lucide-react";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -156,41 +157,34 @@ export default function Home() {
       <div className="justify-center flex gap-4">
         <Link
           href="/contactanos"
-          className="bg-yellow-500 hover:bg-blue-900 text-white font-after h-12 px-6 rounded-lg flex items-center justify-center transition-colors shadow-sm"
+          className="border-2 rounded-xl border-slate-500 border-dashed px-6 py-2 text-slate-600 "
         >
           Contactar ahora
         </Link>
       </div>
       <div className="flex justify-center mt-8 mx-8">
-        <div className="max-w-sm bg bg-slate-50 overflow-hidden rounded shadow-xs">
-          <Image
-            src="/images/carlos.jpg"
-            alt="Sunset in the mountains"
-            width={400}
-            height={250}
-            className="w-full"
-          />
-
+        <div className="max-w-sm bg bg-yellow-500 overflow-hidden rounded-xl shadow-xs">
+          <Card />
           <div className="font-inter px-6 py-4">
-            <div className="font-medium mb-2 text-xl text-slate-600 font-bold">
+            <div className="font-medium mb-2 text-xl text-white font-bold">
               IMPULSANDO TU MARCA PERSONAL
             </div>
 
-            <p className="text-base text-gray-700">
+            <p className="text-base text-white font-light">
               Coberturado con multiples medios de comunicación locales.
             </p>
           </div>
 
           <div className="font-inter px-6 pt-4 pb-2">
-            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+            <span className="mr-2 mb-2 inline-block rounded-full bg-blue-900 px-3 py-1 text-sm text-white">
               #Trasmisiones en vivo
             </span>
 
-            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+            <span className="mr-2 mb-2 inline-block rounded-full bg-blue-900 px-3 py-1 text-sm text-white">
               #Conferencias
             </span>
 
-            <span className="mr-2 mb-2 inline-block rounded-full bg-gray-200 px-3 py-1 text-sm font-semibold text-gray-700">
+            <span className="mr-2 mb-2 inline-block rounded-full bg-blue-900 px-3 py-1 text-sm text-white">
               #Marketing Digital
             </span>
           </div>
